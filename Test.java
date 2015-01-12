@@ -42,7 +42,7 @@ public class Test
     
     /**
      * Muestra la suma de los numeros desde a hasta b incluidos
-     * El usuario ha de introducir a y b
+     * El usuario ha de introducir a y b. Que numero sea mayor es indiferente.
      */
     public void sumValuesInterval(int a, int b){
         if(a > b){
