@@ -39,4 +39,23 @@ public class Test
         }
         System.out.println("La suma de los numeros de 0 a 10 es: " + acumulador);
     }
+    
+    /**
+     * Muestra la suma de los numeros desde a hasta b incluidos
+     * El usuario ha de introducir a y b
+     */
+    public void sumValuesInterval(int a, int b){
+        if(a > b){
+            int intercambio = a;
+            a = b;
+            b = intercambio;
+        }
+        int acumulador = 0;
+        int contador = a;
+        while(contador <= b){
+            acumulador += contador;
+            contador++;
+        }
+        System.out.println("La suma de los numeros entre " + a + " y " + b + " es: " + acumulador);
+    }
 }
