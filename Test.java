@@ -58,4 +58,21 @@ public class Test
         }
         System.out.println("La suma de los numeros entre " + a + " y " + b + " es: " + acumulador);
     }
+    
+    /**
+     * Devuelve Verdadero (True) si el numero introducido es primo
+     * En caso contrario, devuelve Falso (False);
+     */
+    public boolean isPrime(int n){
+        boolean numberIsPrime = true;
+        int divisor = 2;
+        while(numberIsPrime && divisor < n){
+            if(n%divisor == 0){
+                numberIsPrime = false;
+            }else{
+                divisor++;
+            }
+        }
+        return numberIsPrime;
+    }
 }
