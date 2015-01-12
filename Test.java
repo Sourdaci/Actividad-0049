@@ -25,4 +25,18 @@ public class Test
             contador += 5;
         }
     }
+    
+    /**
+     * Muestra la suma de los numeros desde 0 hasta 10 incluidos
+     * El metodo emplea el bucle while
+     */
+    public void sumValues(){
+        int acumulador = 0;
+        int contador = 0;
+        while(contador < 11){
+            acumulador += contador;
+            contador++;
+        }
+        System.out.println("La suma de los numeros de 0 a 10 es: " + acumulador);
+    }
 }
